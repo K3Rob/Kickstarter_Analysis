@@ -15,10 +15,7 @@ On a new work sheet a list of 12 goal ranges was created and compared by the num
 ## Challenges ##
 
 ### Use of Formulas and Defining Variables ###
-Some of the possible challenges in creating this is making sure to have all the parameters in the countifs functions. Omission of any one parameter will cause issues with the data set and can lead to discrepancies. Likewise, the basic parameters of a large table based on a function like countifs need to all be relatively close to the same with only one or two variables in the function changing or the whole table may be corrupted with data that can’t be interpreted correctly.
-
-### Correlations Within the Data ###
-There are some area's to explore within the data that may give better explanitory data. For example an exploration into the correlation between the goal amounts and the time of year, or even the length of campaign in relation to outcomes may be in order. This analysis is a general overview at a glance and does not cover deaper implications of the data set. 
+Some of the possible challenges in creating this is making sure to have all the parameters in the countifs functions. Omission of any one parameter will cause issues with the data set and can lead to discrepancies. Likewise, the basic parameters of a large table based on a function like countifs need to all be relatively close to the same with only one or two variables in the function changing or the whole table may be corrupted with data that can’t be interpreted correctly. Most of this cam be resolved with use of formula view to track which formulas have been used and to ensure consitancy within a column or row.
 
 ## Results ##
 Based on the Table *Theater Outcomes by Launch* the best time to start your campaign is in either May or June and the worst month is December.
