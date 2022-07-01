@@ -7,15 +7,10 @@ The purpose of this analysis was to explore the trends within Kickstarter’s da
 ## Analysis ##
 
 ### Finding outcomes by Launch Date ###
-One of the first things necessary was to convert the time stamp to standard date formats for human interpretation. We used the following formula created in a new column at the end of the original data set.
-> =(((J2/60)/60)/24)+DATE(1970,1,1)
-Following this the data set was filtered through a pivot table by the Parent Category of Theater for all years. We then compared the count of outcomes by the month and sorted the columns ascending. A line chart was made from this table and saved as an image file for future use.
+One of the first things necessary was to convert the time stamp to standard date formats for human interpretation. We used the formula `=(((J2/60)/60)/24)+DATE(1970,1,1)` created in a new column at the end of the original data set.  Following this the data set was filtered through a pivot table by the Parent Category of Theater for all years. We then compared the count of outcomes by the month and sorted the columns ascending. A line chart was made from this table and saved as an image file for future use.
 
 ### Outcomes Based on Goal ###
-On a new work sheet a list of 12 goal ranges was created and compared by the number of successful, failed, and canceled projects. A countifs function was used that counted the number of plays within a range by outcome. Below are a couple samples of the function used.
-> =COUNTIFS(Kickstarter!$R:$R,"Plays",Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F, "successful")
-> =COUNTIFS(Kickstarter!$R:$R,"Plays",Kickstarter!$D:$D,">=1000",Kickstarter!$D:$D,"<5000", Kickstarter!$F:$F, "successful")
-The count of plays in each range, regardless of outcome, was then totalled in a 3rd column and used to calculate the percentage of each outcome per range. These percentages were then charted on a line graph to create better visualization of the data and then saved as an image file for future use. 
+On a new work sheet a list of 12 goal ranges was created and compared by the number of successful, failed, and canceled projects. A countifs function was used that counted the number of plays within a range by outcome. As an example the formula `=COUNTIFS(Kickstarter!$R:$R,"Plays",Kickstarter!$D:$D,">=1000",Kickstarter!$D:$D,"<5000", Kickstarter!$F:$F, "successful")` was used to count all of the plays that were successful and had a goal between 1000 and 4999 USD. The count of plays in each range, regardless of outcome, was then totalled in a 3rd column and used to calculate the percentage of each outcome per range. These percentages were then charted on a line graph to create better visualization of the data and then saved as an image file for future use. 
 
 ## Challenges ##
 
