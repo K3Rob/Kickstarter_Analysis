@@ -19,6 +19,9 @@ Some of the possible challenges in creating this is making sure to have all the 
 
 ## Results ##
 Based on the Table *Theater Outcomes by Launch* the best time to start your campaign is in either May or June and the worst month is December.
+
 From *Outcomes Basted on Goals* the campaigns most likely to succeed had goals under 5000 USD.
+
 This data is likely skewed and may have some significant outliers that need addressed.
+
 Some further analysis ideas inclued success based on length of campaign, and goal amounts based on the time of year.
